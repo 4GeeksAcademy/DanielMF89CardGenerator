@@ -13,7 +13,7 @@
   </head>
   <body>
     <div class="container-fluid py-3">
-      <div class="card">
+      <div id="pokerCard" class="card">
         <span class="topSuit"></span>
         <span class="number">7</span>
         <span class="bottomSuit"></span>
@@ -22,7 +22,19 @@
         <button id="randomCard" class="button">
           <b>Give me a new Card</b>
         </button>
+        <button onclick="resize()" class="button">
+          <b>Resize</b>
+        </button>
+        <button class="button">
+          <label for="width"
+            >width <input type="number" name="width" id="width"
+          /></label>
+          <label for="height"
+            >height <input type="number" name="height" id="height"
+          /></label>
+        </button>
       </div>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>

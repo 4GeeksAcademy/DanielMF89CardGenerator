@@ -31,3 +31,12 @@ function generateSuit() {
   const suitIndex = Math.floor(Math.random() * suitCard.length);
   return `${suitCard[suitIndex]}`;
 }
+window.resize = function() {
+  console.log("resize");
+  let width = document.getElementById("width").value;
+  let height = document.getElementById("height").value;
+  document.getElementById("pokerCard").style.height = width + "px";
+  document.getElementById("pokerCard").style.width = height + "px";
+};
+
+setInterval(onload, 10000);
